@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- per importare la navbar in tutte le pagine senza riscriverla sempre-->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+            $(function(){
+              $("#header").load("navbar.html"); 
+            });
+    </script> 
+
+    <!-- import js -->
+    <script type="text/javascript" src="jquery.js"></script><!-- jquery-->
+    
+    <!-- import css -->
+    <link rel="stylesheet" href="css/boilerplate.css">
+	<link rel="stylesheet" href="css/page.css">
+    <link href="css/style.css" rel="stylesheet">
+    
+    
+    <meta charset="utf-8">
+   
+    <title>PROVA</title>
+        <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
+</head>
+
+<body>
+  	<!-- Sidebar -->
+    	<div id="header"></div>
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+               <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <!--mi serve l'object perchè è cliccabile. 
+                            E' responsive basta toccare viewbox nel svg (se aumento dimensione in reatà diminuisce)-->
+                    		<div id="primaryContainer" class="primaryContainer clearfix">
+                            	<object id="image" data="img/pianta.svg" type="image/svg+xml"></object>
+                            </div>
+                        </div>
+                    </div>
+                </div>             
+            </div>
+	</body>
+ 
+</html>
+
